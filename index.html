@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .Header
+        {
+            background-color:lightsteelblue;
+            text-align: center;
+            padding: 15px;
+            
+        }
+
+        .navbar
+        {
+            background-color: lavender;
+            overflow: hidden;
+            
+        }
+        .navbar a
+        {
+            color: chocolate;
+            text-decoration: none;
+            padding: 15px;
+            float: left;
+            
+            
+        }
+        .navbar a:hover
+        {
+            background-color: burlywood;
+            
+        }
+
+        *
+    {
+        box-sizing: border-box;
+    }
+
+    .row
+    {
+        
+    }
+
+    .column
+    {
+        float: left;
+        width: 50%;
+        padding: 25px ;
+    }
+
+    .column.side
+    {
+        width: 25%;
+    }
+
+    .column.middle
+    {
+        width: 50%;
+    }
+
+    /*Clear Fix Hack method*/
+
+    .row::after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .footer
+    {
+        background-color: bisque;
+        padding: 10px;
+        color: chocolate;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width:600px)
+    {
+        .column.side,.column.middle
+        {
+            width: 100%;
+        }    
+    }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="Header">
+    
+        <h1>Header</h1>
+        <p>Responsive efekti görmek için tarayıcı penceresini yeniden boyutlandırın</p>
+
+    </div>
+
+    <div class="navbar">
+
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    
+    </div>
+
+
+<div class="row">
+
+<div class="column side">
+    <h1>Side</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel sed quos nemo, ut dolor, suscipit magni doloremque cum tempore 
+        provident voluptate est, dicta nobis optio porro debitis odit libero esse deserunt illo totam officia nam asperiores? Repellat 
+        voluptatum itaque deserunt repellendus explicabo qui, aut voluptates impedit similique animi aliquid?</p>
+</div>
+
+
+<div class="column middle">
+    <h1>Main Content</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel sed quos nemo, ut dolor, suscipit magni doloremque cum tempore 
+        provident voluptate est, dicta nobis optio porro debitis odit libero esse deserunt illo totam officia nam asperiores? Repellat 
+        voluptatum itaque deserunt repellendus explicabo qui, aut voluptates impedit similique animi aliquid?</p>
+        
+</div>
+
+
+<div class="column side">
+    <h1>Side</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel sed quos nemo, ut dolor, suscipit magni doloremque cum tempore 
+        provident voluptate est, dicta nobis optio porro debitis odit libero esse deserunt illo totam officia nam asperiores? Repellat 
+        voluptatum itaque deserunt repellendus explicabo qui, aut voluptates impedit similique animi aliquid?</p>
+       
+</div>
+
+</div>
+
+<div class="footer">
+
+    <p>Footer</p>
+
+</div>
+
+</body>
+</html>
